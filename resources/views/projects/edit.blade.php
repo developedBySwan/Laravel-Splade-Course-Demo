@@ -4,6 +4,7 @@
     </x-slot>
 
     <x-panel class="flex flex-col pt-16 pb-16">
+        <x-splade-form :for="$form"/>
         <x-splade-form :default="$project" action="{{ route('projects.update', $project) }}" method="put">
             <x-splade-input name="name" label="Name" />
             <br />
